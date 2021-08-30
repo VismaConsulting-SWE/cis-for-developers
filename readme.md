@@ -1,6 +1,8 @@
 # CIS in Docker
 Download CIS-server Docker images and docker-compose from [https://delivery.ciceron.cloud/Docker/CIS/](https://delivery.ciceron.cloud/Docker/CIS/).
-Login with `*****` and `*****`. To get userid/password send a mail to: lars.dahlqvist@visma.com or jan.andersson@visma.com  
+Login with `userid` and `password`.  
+
+To get userid and password send a mail to: lars.dahlqvist@visma.com or jan.andersson@visma.com  
 
 From the folder with docker-compose.yml run to start the containers:  
 *docker-compose up -d*
