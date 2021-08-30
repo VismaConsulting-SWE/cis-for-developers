@@ -1,12 +1,13 @@
 # CIS in Docker
 Download CIS-server Docker images and docker-compose from [https://delivery.ciceron.cloud/Docker/CIS/](https://delivery.ciceron.cloud/Docker/CIS/).
-Login with `*****` and `*****`.  
-From the folder with docker-compose.yml run to start the containers:   
+Login with `*****` and `*****`. To get userid/password send a mail to: lars.dahlqvist@visma.com or jan.andersson@visma.com  
+
+From the folder with docker-compose.yml run to start the containers:  
 *docker-compose up -d*
 
 ## Description
 This project enables you to edit and run CIS Python components in your IDE 
-and also deploy them to your CIS Docker Container.
+and also deploy them to your CIS Docker Container.  
 
 ## Editing *deploy_to_docker_cis.py*
 Change variable:   
