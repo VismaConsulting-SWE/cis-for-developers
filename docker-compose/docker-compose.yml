@@ -1,0 +1,40 @@
+version: "3"
+services:
+  mysql:
+    restart: unless-stopped
+    image: mysql:5.7
+    networks:
+      - hostonly
+    environment:
+      - MYSQL_ROOT_PASSWORD=passwurdo
+      - MYSQL_DATABASE=cis
+
+    volumes:
+      - ./mysql-data/mysql:/var/lib/mysql
+
+  server:
+    restart: unless-stopped
+    image: ghcr.io/vismaconsulting-swe/cis-server:latest
+    ports:
+      - "10000:30790"
+      - "10001:30791"
+    networks:
+      - hostonly
+    volumes:
+      - ./server-data/etc/is_srv.conf:/software/cis/server/etc/is_srv.conf
+      - ./server-data/workspace:/software/cis/server/workspace
+
+  agent:
+    restart: unless-stopped
+    image: ghcr.io/vismaconsulting-swe/cis-agent:latest
+    ports:
+      - "10100:30792"
+    networks:
+      - hostonly
+    volumes:
+      - ./agent-data/etc/is_agent.conf:/software/cis/agent/etc/is_agent.conf
+      - ./agent-data/etc/is_task.conf:/software/cis/agent/etc/is_task.conf
+      - ./agent-data/id.agent.store:/software/cis/agent/id.agent.store
+
+networks:
+  hostonly:
