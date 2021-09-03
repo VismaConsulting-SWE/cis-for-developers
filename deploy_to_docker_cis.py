@@ -59,7 +59,7 @@ def reload_workspace():
             print("Reloading ALL workspaces")
             requests.post("http://support:support@%s:%s/reload_workspaces?confirm=False" % (hostname, portnum),
                           verify=False, auth=HTTPBasicAuth('support', 'support'))
-            print("All Workspaces was reloaded.")
+            print("All Workspaces was reloaded")
     except Exception as  e:
         print(str(e))
         exit(-1)
