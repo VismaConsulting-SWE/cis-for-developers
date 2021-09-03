@@ -40,17 +40,19 @@ Check output in console.
 
 
 - Start/execute the integration from within CIS container using URL:
-  <http://localhost:10001/integration?wid=internal%3Adefault%2Fdefault&name=template-for-cis-developers>    
+  <http://localhost:10001/integration?wid=internal%3Adefault%2Fdefault&name=cis%20docker>    
   If userid/password is needed, use: support/support  
   Check output result in event log: *Name: Empty / Film: No data sent in body/payload*    
 
 
 - Use this URL to send data from web browser  
-  <http://localhost:10100/rest/start/sync/integration/template-for-cis-developers.if?wid=internal:default/default&surname=Kenobi&givenname=Obi-Wan>  
+  <http://localhost:10100/rest/start/sync/integration/cis%20docker.if?wid=internal:default/default&surname=Kenobi&givenname=Obi-Wan>  
   Check output in event log  
 
 
-- Use same URL to send payload/body data from POSTMAN or similar.  
+- Use same URL to send payload/body data from POSTMAN or similar.
+
+  Import and use the file *utils/CIS Docker.postman_collection.json* in POSTMAN  
   Check output in event log
   
 ### Edit and deploy *template_for_cis.py*

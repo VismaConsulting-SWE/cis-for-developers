@@ -13,5 +13,10 @@
         <item id="cis docker.if"/>
       </items>
     </group>
+    <group expanded="false">
+      <items type="process">
+        <item id="cis docker.pf"/>
+      </items>
+    </group>
   </workspace>
 </integration-services>
