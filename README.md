@@ -9,9 +9,9 @@ This project enables you to edit and run CIS Python components in your IDE and a
 * Download as zip and unzip 
 * or
 * Clone repo to your computer
-2) Open folder 'docker-compose' and run 'docker-compose up -d' to start the containers.
+2) Open folder 'cis-docker-compose-env' and run 'docker-compose up -d' to start the containers.
 ```shell
-cd docker-compose
+cd cis-docker-compose-env
 docker-compose up -d
 ```
 
@@ -69,5 +69,6 @@ Add your own components based on the template and add the filename to this list 
 
 When component is created, tested and deployed. Create new integration and add that component to the integration. (You can also add the component to any existing integration.)  
 
-Create a new integration in CIS using this URL:  
+Create a new or copy an existing integration in CIS using this URL:  
 <http://localhost:10001/new_task_item?wid=internal%3Adefault%2Fdefault>  
+Then add the components you want to use in that integration.
