@@ -4,7 +4,7 @@ AutoStart=0
 Disabled=0
 
 [Settings]
-IntegrationName=CIS Docker
+IntegrationName=cis docker
 IconFile=integration.ico
 Sender=
 Receiver=
@@ -12,7 +12,7 @@ DebugMessages=0
 TaskListUpdate=1
 Chatty=3
 InfoFile=
-ProcessFile=Test1.pf
+ProcessFile=cis docker.pf
 
 [Description]
 

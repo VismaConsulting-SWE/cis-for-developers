@@ -4,7 +4,7 @@ AutoStart=0
 Disabled=0
 
 [Settings]
-ProcessName=CIS Docker
+ProcessName=cis docker
 IconFile=process.ico
 DebugMessages=0
 TaskListUpdate=1
