@@ -10,7 +10,7 @@ except:
 
 import traceback
 
-def main(task: object) -> None:
+def main(task: cis.Task) -> None:
     try:
 
         data = task.get_data() # get the data from task
