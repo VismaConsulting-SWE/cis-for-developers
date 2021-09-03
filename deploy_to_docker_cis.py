@@ -15,7 +15,7 @@ portnum = 10001
 
 source_folder = os.getcwd()
 # Todo: 1 Change path relative to installation
-target_folder = r"C:\Home\git\github\cis-for-developers\docker-compose\server-data\workspace\internal\default\component"
+target_folder = r"C:\Home\git\github\cis-for-developers\cis-docker-compose-env\server-data\workspace\internal\default\component"
 wid = "internal:default/default"
 # wid = ""
 
