@@ -24,7 +24,7 @@ def main(task: cis.Task) -> None:
 
         text_name = f"Name: {givenname} {surname}"
         task.report_event(cis.re_normal, text_name) # Report to console in IDE
-        task.report_event(cis.re_normal, f"Film: {data}") # Report to event_log in CIS.
+        task.report_event(cis.re_normal, f"Data: {data}") # Report to event_log in CIS.
 
         # Se all parameters on task
         # task.report_event(cis.re_normal, task.get_parameters())
