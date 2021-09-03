@@ -1,0 +1,20 @@
+{
+	"info": {
+		"_postman_id": "07fd121e-cabf-4ec1-9701-b7f7da02da72",
+		"name": "CIS Docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CIS Docker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
