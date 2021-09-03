@@ -1,0 +1,22 @@
+[General]
+InvisibleTabs=0
+AutoStart=0
+Disabled=0
+
+[Settings]
+IntegrationName=CIS Docker
+IconFile=integration.ico
+Sender=
+Receiver=
+DebugMessages=0
+TaskListUpdate=1
+Chatty=3
+InfoFile=
+ProcessFile=Test1.pf
+
+[Description]
+
+[Parameters]
+
+[Identifiers]
+

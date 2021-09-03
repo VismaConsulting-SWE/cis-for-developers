@@ -10,7 +10,7 @@
   <workspace name="default">
     <group expanded="false">
       <items type="integration">
-        <item id="Test-of-Template-for-CIS.if"/>
+        <item id="cis docker.if"/>
       </items>
     </group>
   </workspace>

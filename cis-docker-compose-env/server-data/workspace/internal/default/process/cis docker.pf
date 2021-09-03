@@ -1,0 +1,20 @@
+[General]
+InvisibleTabs=8
+AutoStart=0
+Disabled=0
+
+[Settings]
+ProcessName=CIS Docker
+IconFile=process.ico
+DebugMessages=0
+TaskListUpdate=1
+Chatty=3
+InfoFile=
+EventFile=default.evn
+LogFile=default.log
+Component1=File=template_for_cis.py
+
+[Description]
+
+[Parameters]
+
