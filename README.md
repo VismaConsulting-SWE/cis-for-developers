@@ -1,15 +1,19 @@
 # CIS in Docker
 
-Open folder `docker-compose` in your prompt and run `docker-compose` to start the containers:
+## Description  
+This project enables you to edit and run CIS Python components in your IDE and also deploy them to your CIS Docker Container.  
 
+## How to install CIS  
+
+1) Install this project by:
+* Download as zip and unzip 
+* or
+* Clone repo to your computer
+2) Open folder 'docker-compose' and run 'docker-compose up -d' to start the containers.
 ```shell
 cd docker-compose
 docker-compose up -d
 ```
-
-## Description
-
-This project enables you to edit and run CIS Python components in your IDE and also deploy them to your CIS Docker Container.  
 
 ## Editing *deploy_to_docker_cis.py*
 
@@ -19,7 +23,7 @@ to point to your Docker Installation *component* folder.
 
 ## Python version
 
-Best practise is to use python shipped with the CIS-server package but it works with already installed Python 3.*  
+Best practise is to use Python 3.* shipped with the CIS-server package, but it works with an already installed Python 3.*  
 
 ### To use CIS Python 3.*
 
