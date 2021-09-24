@@ -27,7 +27,7 @@ Best practise is to use Python 3.* shipped with the CIS-server package, but it w
 
 ### To use CIS Python 3.*
 
-Download [Windows CIS-server package](http://www.siriusit.net/ciceron/is/v27/cis-2.7.7.0-3-1-20210420-1601.zip) and extract Python3 folder from ZIP. Set your Python interpreter in IDE to use CIS-Python.
+Download [Windows CIS-server package](http://www.siriusit.net/ciceron/is/v27/cis-2.7.8.0-9-1-20210915-1130.zip) and extract Python3 folder from ZIP. Set your Python interpreter in IDE to use CIS-Python.
 
 ## This mini project
 
