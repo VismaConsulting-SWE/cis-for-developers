@@ -27,7 +27,7 @@ def main(task: cis.Task) -> None:
         task.report_event(cis.re_normal, f"Data: {data}") # Report to event_log in CIS.
 
         # Se all parameters on task
-        task.report_event(cis.re_normal, task.get_parameters())
+        # task.report_event(cis.re_normal, task.get_parameters())
 
         # Fetch data from internet.
         # task.report_event(cis.re_normal, requests.get('http://www.aftonbladet.se').text)
