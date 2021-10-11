@@ -64,7 +64,7 @@ def get_all_parameters(task: object) -> dict:
 if __name__ == '__main__':
     task = cis.new_task()
 
-    data = task.set_data("Star Wars")
+    task.set_data("Star Wars")
     task.set_parameter("givenname", "Obi-Wan")
     task.set_parameter("surname", "Kenobi")
     main(task)
