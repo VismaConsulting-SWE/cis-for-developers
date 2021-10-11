@@ -24,10 +24,10 @@ def main(task: cis.Task) -> None:
 
         text_name = f"Name: {givenname} {surname}"
         task.report_event(cis.re_normal, text_name) # Report to console in IDE
-        task.report_event(cis.re_normal, f"Film: {data}") # Report to event_log in CIS.
+        task.report_event(cis.re_normal, f"Data: {data}") # Report to event_log in CIS.
 
         # Se all parameters on task
-        # task.report_event(cis.re_normal, task.get_parameters())
+        task.report_event(cis.re_normal, task.get_parameters())
 
         # Fetch data from internet.
         # task.report_event(cis.re_normal, requests.get('http://www.aftonbladet.se').text)
@@ -64,7 +64,7 @@ def get_all_parameters(task: object) -> dict:
 if __name__ == '__main__':
     task = cis.new_task()
 
-    data = task.set_data("Star Wars")
+    task.set_data("Star Wars")
     task.set_parameter("givenname", "Obi-Wan")
     task.set_parameter("surname", "Kenobi")
     main(task)
