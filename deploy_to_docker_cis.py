@@ -5,21 +5,24 @@ import os
 import shutil
 import traceback
 import requests
-
+import pathlib
 from requests.auth import HTTPBasicAuth
-
 from sys import exit
 
 hostname = "127.0.0.1"
 portnum = 10001
 
 source_folder = os.getcwd()
-# Todo: 1 Change path relative to installation
-target_folder = r"C:\Home\git\github\cis-for-developers\cis-docker-compose-env\server-data\workspace\internal\default\component"
+cis_server_folder = "{}/cis-docker-compose-env/server-data".format(
+    pathlib.Path(__file__).parent.resolve()
+)
+target_folder = "{}/workspace/internal/default/component".format(
+    cis_server_folder
+)
 wid = "internal:default/default"
 # wid = ""
 
-# Todo: 2 Add files here to be deployed to CIS server/workspace
+# Todo: 1 Add files here to be deployed to CIS server/workspace
 files_to_deploy = [
     (source_folder, target_folder, "template_for_cis.py")
     # (source_folder, target_folder, 'my_component_for_cis.py'),
@@ -82,6 +85,5 @@ def reload_workspace():
 
 
 if __name__ == "__main__":
-
     print("Source folder: ", source_folder)
     deploy_local()
