@@ -4,7 +4,7 @@ import requests
 try:
     # When running in IDE
     import integration_services37 as cis
-except:
+except Exception:
     # When running in CIS (Docker)
     import integration_services as cis
 
