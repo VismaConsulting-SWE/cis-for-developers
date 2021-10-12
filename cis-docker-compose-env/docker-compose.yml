@@ -13,6 +13,8 @@ services:
       - ./mysql-data/mysql:/var/lib/mysql
 
   server:
+    depends_on:
+      - mysql
     restart: unless-stopped
     image: ghcr.io/vismaconsulting-swe/cis-server:latest
     ports:
@@ -25,6 +27,8 @@ services:
       - ./server-data/workspace:/software/cis/server/workspace
 
   agent:
+    depends_on:
+      - server
     restart: unless-stopped
     image: ghcr.io/vismaconsulting-swe/cis-agent:latest
     ports:
