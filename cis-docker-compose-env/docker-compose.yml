@@ -39,6 +39,7 @@ services:
       - ./agent-data/etc/is_agent.conf:/software/cis/agent/etc/is_agent.conf
       - ./agent-data/etc/is_task.conf:/software/cis/agent/etc/is_task.conf
       - ./agent-data/id.agent.store:/software/cis/agent/id.agent.store
+      - ./agent-data/file_area:/file_area
 
 networks:
   hostonly:
