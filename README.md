@@ -72,3 +72,6 @@ When component is created, tested and deployed. Create new integration and add t
 Create a new or copy an existing integration in CIS using this URL:  
 <http://localhost:10001/new_task_item?wid=internal%3Adefault%2Fdefault>  
 Then add the components you want to use in that integration.
+
+### Import examples
+Import examples to your local installation found in folder *exports*
